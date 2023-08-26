@@ -1,0 +1,48 @@
+// C++ code
+//LED On-Off
+void setup()
+{
+  pinMode(7,OUTPUT);
+}
+
+void loop()
+{
+  delay(1000);
+  digitalWrite(7,HIGH);
+  delay(100);
+  digitalWrite(7,LOW);
+  delay(100);
+  digitalWrite(7,HIGH);
+  delay(100);
+  digitalWrite(7,LOW);
+  delay(100);
+  digitalWrite(7,HIGH);
+  delay(100);
+  digitalWrite(7,LOW);
+  delay(1000);
+}
+
+
+
+
+
+
+
+//C++
+//led on off
+const int ledPin = 13;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  for (int i = 0; i < 3; i++) {
+    digitalWrite(ledPin, HIGH);
+    delay(200); 
+    digitalWrite(ledPin, LOW); 
+    delay(200); 
+  }
+  
+  delay(1000);
+}
