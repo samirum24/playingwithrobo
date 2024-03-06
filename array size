@@ -1,0 +1,16 @@
+// C++ code
+// Array size
+
+void setup()
+{
+  Serial.begin(9600);
+  int array[]={1,2,3,4,5};
+  char carray[]={'a','b','c'};
+  float farray[]={3.1416,9.8};
+  
+  int a=1;float b=3.1416; char c='a';
+  Serial.println(sizeof(farray)/sizeof(farray[0]));
+}
+void loop(){
+  
+}
