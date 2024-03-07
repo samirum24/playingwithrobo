@@ -1,0 +1,32 @@
+//C++code
+//string:a collection of char ""
+
+void setup(){
+  Serial.begin(9600);
+    String s1="Hello World!",_null="";
+       Serial.println(_null);
+       Serial.println(s1);
+  
+ int len=s1.length();
+   Serial.println(len);
+    char character=s1.charAt(4);
+     Serial.println(character);
+  String substring=s1.substring(4,8);
+    Serial.println(substring);
+  String in="abcd",out="1234";
+  String sum=in+out;
+   Serial.println(sum);
+  
+  String num1="5",num2="67";
+  int intNum1=num1.toInt();
+  int intNum2=num2.toInt();
+   Serial.println(intNum1+intNum2);
+  
+  s1.toUpperCase();
+   Serial.println(s1);
+  s1.toLowerCase();
+   Serial.println(s1);
+ 
+}
+
+void loop(){}
