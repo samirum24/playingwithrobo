@@ -1,0 +1,29 @@
+// C++ code
+// largest number function
+
+void setup()
+{
+  Serial.begin(9600);
+   //int a=Sum(9780,7889);
+     int number=findLargestNumber(9,7,8);
+    
+  Serial.println(number);
+      Serial.print(" ");
+}
+  void loop(){}
+
+int Sum(int a,int b){
+  int Sum=a+b;
+   return Sum;
+}
+int findLargestNumber(int n1,int n2,int n3){
+  if(n1>n2 && n1>n3){
+    return n1;
+  }
+  if(n2>n1 && n2>n3){
+    return n2;
+  }
+  if(n3>n2 && n3>n1){
+    return n3;
+  }
+} 
