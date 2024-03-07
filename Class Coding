@@ -1,0 +1,42 @@
+// C++ code
+// Class
+
+class Calculation{
+  int a,b,c;
+  public:
+  void set(int n1,int n2,int n3){
+    a=n1;b=n2;c=n3;
+  }
+  void sum(){
+    Serial.print("Sum: ");
+    Serial.println(a+b+c);
+  }
+  void multiply(){
+    Serial.print("multiplication: ");
+    Serial.println(a*b*c);
+  }
+  void largestNumber(){
+    if(a>b &&a>c){
+        Serial.println("a is the largest");
+    }
+    if(b>a &&b>c){
+        Serial.println("b is the largest");
+    } 
+    if(c>b &&c>b){
+        Serial.println("c is the largest");
+    }
+  }
+};
+
+void setup()
+{
+  Serial.begin(9600);
+   Calculation a;
+  a.set(10,20,30);
+  a.sum();
+  a.multiply();
+  a.largestNumber();
+} 
+  
+  void loop(){}
+
